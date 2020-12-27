@@ -8,15 +8,15 @@ For my final submission for the CS50 2020 Final Project Web Track, I developed a
 
 The application is called "MyBike", where users can register and then login to the MyBike site.
 
-Once sucessfully logged into the site, users can register their bikes which some of the common bike specifications e.g. Brand, Make, Model, Image etc.
+Once sucessfully logged into the site, users can register their bikes with some of the common bike specifications e.g. Brand, Make, Model, Image etc.
 
-The applcation allows user to perform CRUD (Create, Read, Update, Delete) actions on their bike information.
+The application allows users to perform CRUD (Create, Read, Update, Delete) actions on their bike information.
 
-I choose to use Flask as the web development framework for this application as allows for simple and scalable applcations.
+I choose to use Flask as the web development framework for this application as it allows for simple and scalable applications.
 
 All the applcation data is stored in a SQLite database, and I used SQLAlchemy for working with the database, as it gives the flexabilty of using ORM (Object Relational Mapper) and easier database queries.
 
-The website is has a simple yet responsive design which is managed by Bootstrap.
+The website has a simple yet responsive design which is managed by Bootstrap.
 
 
 ## Technologies
