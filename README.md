@@ -16,7 +16,7 @@ I choose to use Flask as the web development framework for this application as i
 
 All the applcation data is stored in a SQLite database, and I used SQLAlchemy for working with the database, as it gives the flexabilty of using ORM (Object Relational Mapper) and easier database queries.
 
-The website has a simple yet responsive design which is managed by Bootstrap.
+The website has a simple yet responsive design which is managed by Bootstrap and works on mobile and desktop browsers.
 
 
 ## Technologies
