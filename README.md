@@ -43,10 +43,38 @@ MyBike web application has the following core features:
 * Delete bike information
 	
 ## Setup
-To run this project, install it locally using npm:
+To run this project locally:
+
+Ensure Python is installed
+
+Clone the repo
 
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+$ git clone https://github.com/DamienFloody/MyBikeApp
+
 ```
+Change into folder
+
+```
+$ cd MyBikeApp
+
+```
+
+Create virtual environment and install the requirements
+
+```
+$ virtualenv venv
+$ . venv/bin/activate
+$ pip install -r requirements.txt
+
+```
+
+Run the app
+
+```
+$ cd MyBikeApp
+$ flask run
+
+```
+
+

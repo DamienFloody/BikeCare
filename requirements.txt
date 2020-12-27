@@ -1,2 +1,3 @@
-Flask
-Sqlalchemy
+flask==1.1.2
+SQLAlchemy==1.3.22
+sqllite==3.34.0
