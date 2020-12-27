@@ -32,11 +32,15 @@ This web application has been developed using the following technologies:
 
 
 ## Features
-MyBike web application has the following features:
+MyBike web application has the following core features:
+
 * Register user
-* Login/out user
-* CRUD bike information
-* Register user
+* Login user
+* Logout user
+* Create bike information
+* Read bike information
+* Edit bike information
+* Delete bike information
 	
 ## Setup
 To run this project, install it locally using npm:

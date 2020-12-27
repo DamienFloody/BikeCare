@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Delete bike
+{% endblock %}
+
+{% block main %}
+
+<form action="/deleteBike/{{id}} " method="post">
+</div>
+    <h4>Are you sure you want to delete this Bike?</h4>
+    <div class="row">
+      {% for d in bikeData %}
+      <div class="col-sm">
+      <div class="card" style="width: 18rem;">
+        {% if d.image %}
+        <img src="{{ url_for('upload', filename=d.image) }}" width = "300px" height = "200px" class="card-img-top" alt="Image">
+        {% else %}
+        <img src="/static/index.svg" width = "300px" height = "200px" class="card-img-top" alt="Image">
+        {% endif %}
+        <div class="card-body">
+          <h5 class="card-title">{{d.name}}</h5>
+          <p class="card-text">{{d.description}}</p>
+          <button class="btn btn-danger" type="submit">Yes!, Delete Bike</button>
+          <a href="{{ '/bikes '}}" class="btn btn-primary" >Cancel</a>
+        </div>
+      </div>
+    </div>
+      {% endfor %}
+      </div>
+
+  </form>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Edit bike
+{% endblock %}
+
+{% block main %}
+
+<form action="/editBike/{{bikeData.id}} " method="post">
+</div>
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="name">Bike Name</label>
+    <input type="text" class="form-control" value = {{bikeData.name}} name="name" placeholder="name">
+  </div>
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="description">Bike Description</label>
+    <input type="text" class="form-control" value = {{bikeData.description}} name="description" placeholder="description">
+  </div>
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="brand">Bike Brand</label>
+    <input type="text" class="form-control" value = {{bikeData.brand}} name="brand" placeholder="brand">
+  </div>
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="model">Bike model</label>
+    <input type="text" class="form-control" value = {{bikeData.model}} name="model" placeholder="model">
+  </div>
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="type">Bike type</label>
+    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref" name="type" placeholder="type">
+      {% for i in bikeTypes %}
+      <option selected>{{bikeData.type}}</option>
+      <option value="{{i}}">{{i}}</option>
+      {% endfor %}
+    </select>
+  </div>
+  
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="colour">Bike colour</label>
+    <input type="text" class="form-control" value = {{bikeData.colour}} name="colour" placeholder="colour">
+  </div>
+  
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="size">Bike size</label>
+    <input type="text" class="form-control" value = {{bikeData.size}} name="size" placeholder="Bike size">
+  </div>
+  
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="serialNumber">Bike Serial Number</label>
+    <input type="text" class="form-control" value = {{bikeData.serialNumber}} name="serialNumber" placeholder="Serial Number">
+  </div>
+  
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="year">Bike release year</label>
+    <input type="text" class="form-control" value = {{bikeData.year}} name="year" placeholder="year">
+  </div>
+
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="price">Bike price</label>
+    <input type="text" class="form-control" value = {{bikeData.price}} name="price" placeholder="price">
+  </div>  
+  
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="date">Purchase Date</label>
+    <input type="text" class="form-control" id="date" value = {{date}} name="date" placeholder="date">
+  </div>
+
+  {% if bikeData.image %}
+  <div class="form-group col-md-2">
+    <label class="control-label font-weight-bold" for="image">Image</label>
+    <input type="text" class="form-control" id="image" value = {{bikeData.image}} name="image" placeholder="image">
+  </div>
+  {% endif %}
+    <button class="btn btn-primary" type="submit">Update info</button>
+
+  </form>
+{% endblock %}

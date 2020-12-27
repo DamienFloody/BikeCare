@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to MyBike</h1>
+  <p class="lead">MyBike makes it easy for you to keep track of your bicycles (Bikes) detials.</p>
+  <hr class="my-4">
+  {% if not session["user_id"]%}
+  <p>Register or Login to start using MyBike</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/register" role="button">Register</a>
+    <a class="btn btn-primary btn-lg" href="/login" role="button">Login</a>
+  </p>
+  {% else %}
+  <h3>Welcome! {{session["user_firstname"]}}</h3>
+  <p>You can view or register your bikes below.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/bikes" role="button">View bikes</a>
+    <a class="btn btn-primary btn-lg" href="/registerBike" role="button">Register bike</a>
+  </p>
+
+  {% endif %}
+</div>
+
+{% endblock %}

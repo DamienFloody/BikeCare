@@ -1,0 +1,29 @@
+CREATE TABLE 'bikes' (
+'id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+'userID' INTEGER NOT NULL, 
+'name' TEXT, 
+'description' TEXT, 
+'brand' TEXT, 
+'model' TEXT,
+'type' TEXT,
+'colour' TEXT,
+'size' INTEGER,
+'serialNumber' TEXT,
+'year' NUMERIC,
+'date' DATE,
+'price' NUMERIC,
+'image' TEXT,
+FOREIGN KEY ('userID') REFERENCES users('id')
+)
+
+
+CREATE TABLE 'users' (
+'id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+'userName' TEXT NOT NULL, 
+'firstName' TEXT NOT NULL, 
+'lastName' TEXT NOT NULL,
+'email' TEXT, 
+'phone' TEXT, 
+'hash' TEXT NOT NULL,
+UNIQUE (userName)
+)

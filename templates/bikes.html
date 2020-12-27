@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    My Bikes
+{% endblock %}
+
+{% block main %}
+
+  <h1>Hi!, {{session["user_firstname"]}}</h1>
+
+{% if not bikeData%}
+<p>Seems you dont have any bikes registered yet!</p>
+
+<a class="btn btn-primary btn-lg" href="/registerBike" role="button">Register bike</a>
+{% endif %}
+
+<div class="row">
+  {% for d in bikeData %}
+  <div class="col-sm">
+  <div class="card" style="width: 18rem;">
+    {% if d.image %}
+    <img src="{{ url_for('upload', filename=d.image) }}" width = "300px" height = "200px" class="card-img-top" alt="Image">
+    {% else %}
+    <img src="/static/index.svg" width = "300px" height = "200px" class="card-img-top" alt="Image">
+    {% endif %}
+    <div class="card-body">
+      <h5 class="card-title">{{d.name}}</h5>
+      <p class="card-text">{{d.description}}</p>
+      <a href="{{ '/viewBike/%s'%d.id }}" class="btn btn-primary" >View details</a>
+
+    </div>
+  </div>
+</div>
+  {% endfor %}
+  </div>
+</div>
+{% endblock %}
