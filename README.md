@@ -1,30 +1,48 @@
-# BikeCare
+## Title
 
-TODO
+CS50 2020 Final Project Web Track
 
-BikeCare app allows the user to track the bike condition and notify user when to care for the bike:
+## Introduction
 
-Tire / tube change
+For my final submission for the CS50 2020 Final Project Web Track, I developed a small web application which allows users to keep a catalog of their bicyles (bikes).
 
-Chain oil and change
+The application is called "MyBike", where users can register and then login to the MyBike site.
 
-Wear and tear of components
+Once sucessfully logged into the site, users can register their bikes which some of the common bike specifications e.g. Brand, Make, Model, Image etc.
 
-Suggestions on where to buy compontents
+The applcation allows user to perform CRUD (Create, Read, Update, Delete) actions on their bike information.
 
-History of maintance and components
+I choose to use Flask as the web development framework for this application as allows for simple and scalable applcations.
 
-User profile
+All the applcation data is stored in a SQLite database, and I used SQLAlchemy for working with the database, as it gives the flexabilty of using ORM (Object Relational Mapper) and easier database queries.
 
-Bike Profiles
-
-GeoLocation of trips km, distance etc
-
-Weather condition of trips
-
-Road condition?
+The website is has a simple yet responsive design which is managed by Bootstrap.
 
 
+## Technologies
+This web application has been developed using the following technologies:
+
+* Python version: 3.8.5
+* Flask version: 1.1.2
+* SQLAlachemy version: 1.3.22
+* SQLite version: 3.34.0
+* Bootstrap version: 4.0.0
+* Bootstrap date picker: (https://github.com/uxsolutions/bootstrap-datepicker)
+* jQuery version: 3.3.1
 
 
+## Features
+MyBike web application has the following features:
+* Register user
+* Login/out user
+* CRUD bike information
+* Register user
+	
+## Setup
+To run this project, install it locally using npm:
 
+```
+$ cd ../lorem
+$ npm install
+$ npm start
+```
