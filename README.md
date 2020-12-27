@@ -1,10 +1,10 @@
 ## Title
 
-CS50 2020 Final Project Web Track
+CS50 2020 Final Project - Web Track
 
 ## Introduction
 
-For my final submission for the CS50 2020 Final Project Web Track, I developed a small web application which allows users to keep a catalog of their bicyles (bikes).
+For my final submission for the CS50 2020 Final Project Web Track, I developed a small web application which allows users to keep a catalogue of their bicyles (bikes).
 
 The application is called "MyBike", where users can register and then login to the MyBike site.
 
