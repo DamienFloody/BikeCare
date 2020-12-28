@@ -102,7 +102,7 @@ def logout():
     # Redirect user to login form
     return redirect("/")
 
-@app.route("/bikes")
+@app.route("/bikes", methods=["GET"])
 @login_required
 def bikes():
   
