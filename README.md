@@ -51,13 +51,11 @@ To run this project locally:
 
 ```
 $ git clone https://github.com/DamienFloody/MyBikeApp
-
 ```
 * Change into folder
 
 ```
 $ cd MyBikeApp
-
 ```
 
 * Create virtual environment and install the requirements
@@ -66,7 +64,6 @@ $ cd MyBikeApp
 $ virtualenv venv
 $ . venv/bin/activate
 $ pip3 install -r requirements.txt
-
 ```
 
 * Run the app
@@ -74,7 +71,13 @@ $ pip3 install -r requirements.txt
 ```
 $ cd MyBikeApp
 $ flask run
-
 ```
 
+## TODO
 
+Some pending developments.
+
+* Allow user to change profile info and password
+* Allow user to upload profile image
+* Allow user to update/delete image for bike info
+* Expand on bike info with bike components
