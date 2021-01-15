@@ -26,6 +26,15 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
+@app.context_processor
+def inject_date():
+
+    current_time = datetime.now()
+
+    year = current_time.strftime("%Y")
+
+    return dict(year=year)
+
 
 @app.route('/uploads/<filename>')
 def upload(filename):
